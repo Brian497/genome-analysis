@@ -1,0 +1,45 @@
+---
+title: "Lab4.R"
+author: "Brian Nazaire"
+date: "2/12/2020"
+output: html_document
+---
+
+```{r}
+#Exercise 1
+library(tidyverse)
+SNPs<- read.table("23andMe_complete.txt", header = TRUE, sep = "\t")
+library(ggplot2)
+ggplot(data = SNPs) + 
+  geom_bar(mapping = aes(x = chromosome), fill = "blue") + ggtitle("23&ME")
+```
+
+```{r}
+#Exercise 2
+B<-ggplot(data = SNPs) + geom_bar(mapping = aes(x = chromosome, fill = genotype))
+B
+B + ggtitle("23&ME")+ ylab("genotype count")+xlab("# of chromosomes")
+mycolors <- c("AA"="red","AC"="red","AG"="red","AT"="red","CC"="red","CG"="red","CT"="red","GG"="red","GT"="red","TT"="red","A"="green","C"="green","G"="green","T"="green","D"="black","DD"="black","I"="black","II"="black", "DI"="black","--"="purple")
+B + scale_fill_manual(values=c(mycolors))
+```
+
+```{r}
+#Exercise 3
+library(plotly)
+library(DT)
+```
+![23&ME](Rplot.png)
+```{r}
+#Exercise 4 
+
+
+```
+![23&ME](Rplot@@.png)
+
+
+```{r}
+
+
+```{r}
+
+```

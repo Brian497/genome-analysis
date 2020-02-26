@@ -1,0 +1,21 @@
+---
+title: "Test"
+author: "Brian Nazaire"
+date: "2/26/2020"
+output: html_document
+bibliography: data/references.bib
+---
+
+This is my new web site
+
+[lab 2](Lab-2b.html)
+
+[lab 3](Lab-3--Html-.html)
+
+[lab 4](Lab4Official.html)
+
+[lab 5](Lab-5--Mark-.html)
+
+Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].
+
+# REFERENCES

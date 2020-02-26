@@ -1,0 +1,67 @@
+---
+title: "Lab 5"
+author: "Brian Nazaire"
+date: "2/24/2020"
+output: html_document
+---
+
+
+```{r}
+library (tidyverse)
+
+surveys <- read_csv("data/portal_data_joined.csv")
+SNPs <- read_tsv("data/23andMe_complete.txt", skip = 14, col_types = 
+                   cols(chromosome = col_factor()))
+```
+
+
+```{r}
+#Exercise 1
+select(SNPs, position, genotype)
+```
+
+```{r}
+#Exercise 2 
+SNPs %>%
+  filter(chromosome == "MT") %>% 
+  filter(genotype != "A") %>% 
+  filter(genotype != "T") 
+
+```
+
+```{r}
+#Exercise 3 
+SNPs %>%
+  group_by(chromosome) %>% 
+  summarize(min_position = min(position), 
+            max_position = max(position), 
+            n = n())
+
+```
+
+```{r}
+#Exercise 4 
+SNPs %>%
+  group_by(chromosome) %>% 
+  summarize(min_position = min(position), 
+            max_position = max(position), 
+            n = n()) %>%
+    mutate(density = n / (max_position - min_position))
+```
+
+```{r}
+#Exercise 5 
+SNPs %>%
+  group_by(chromosome) %>% 
+  summarize(min_position = min(position), 
+            max_position = max(position), 
+            n = n()) %>%
+  mutate(density = n / (max_position - min_position)) %>%
+  arrange (density)
+  
+```
+
+```{r}
+#Exercise 6
+  write_csv(SNPs, path = "data/SNPs.csv")
+```

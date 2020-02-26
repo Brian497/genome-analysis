@@ -1,0 +1,51 @@
+---
+title: "Lab 3"
+author: "Brian Nazaire"
+date: "2/10/2020"
+output: html_document
+---
+
+```{r}
+#Exercise 1
+library(tidyverse)
+SNPs<- read.table("23andMe_complete.txt", header = TRUE, sep = "\t")
+
+ggplot(data = SNPs) + 
+  geom_bar(mapping = aes(x = chromosome))
+
+
+```
+
+```{r}
+#Exercise 2
+SNPs$chromosome = ordered(SNPs$chromosome, levels=c(seq(1, 22), "X", "Y", "MT"))
+bar <- ggplot(data = SNPs) + geom_bar(mapping = aes (x=chromosome)) 
+bar
+
+```
+```{r}
+#Exercise 3
+ggplot(data = SNPs) + geom_bar(mapping = aes(x = chromosome, fill = genotype))
+
+
+```
+```{r}
+#Exercise 4
+ggplot(data = SNPs) + geom_bar(mapping = aes(x = chromosome, fill= genotype), position = "fill")
+
+
+
+```
+```{r}
+#Exercise 5
+ggplot(data = SNPs) + geom_bar(mapping = aes(x = chromosome, fill= genotype), position = "dodge")
+
+
+
+```
+```{r}
+#Exercsie 6
+ggplot(data = SNPs) + geom_bar(mapping = aes(x = chromosome, fill= genotype), position = "dodge") + facet_wrap(~genotype)
+
+
+```
