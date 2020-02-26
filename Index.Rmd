@@ -1,5 +1,5 @@
 ---
-title: "Test"
+title: "Index"
 author: "Brian Nazaire"
 date: "2/26/2020"
 output: html_document
@@ -7,4 +7,23 @@ output: html_document
 
 This is my new web site
 
-*[This is my lab 5](Lab-5--Mark-.html)
+[Lab 2](Lab 2b.Rmd)
+
+[Lab 3](Lab 3 (Html).Rmd)
+
+[Lab 4](Lab4Official.Rmd)
+
+[Lab 5](Lab-5--Mark-.html)
+
+Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].
+
+# REFERENCES
+
+@Article{RCoreTeam,
+  Title                    = {R: A Language and Environment for Statistical Computing},
+  Author                   = {{R Core Team}},
+  Year                     = {2015},
+
+  Type                     = {Journal Article},
+  Url                      = {http://www.R-project.org}
+}
