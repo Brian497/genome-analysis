@@ -16,6 +16,8 @@ This is my new web site
 
 [lab 5](Lab-5--Mark-.html)
 
+[Lab 9 Corona](COVID-19-data-Lab.html)
+
 Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].
 
 # REFERENCES
