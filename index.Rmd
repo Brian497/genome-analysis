@@ -1,5 +1,5 @@
 ---
-title: "Test"
+title: "Human Genome Webiste"
 author: "Brian Nazaire"
 date: "2/26/2020"
 output: html_document
@@ -17,6 +17,10 @@ This is my new web site
 [lab 5](Lab-5--Mark-.html)
 
 [Lab 9 Corona](COVID-19-data-Lab.html)
+
+[Lab 10](Lab_10.html) 
+
+[@Hopkins2020]
 
 Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].
 
