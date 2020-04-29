@@ -20,6 +20,12 @@ This is my new web site
 
 [Lab 10](Lab_10.html) 
 
+[Lab 11 COVID-19 Ex1](https://brian-genome.shinyapps.io/genome-analysis/)
+[Lab 11 COVID-19 Ex2](https://brian-genome.shinyapps.io/Exercise2Lab11/)
+[Lab 11 COVID-19 Ex3](https://brian-genome.shinyapps.io/Lab-11-3/)
+
+[Lab 11 COVID-19 Ex4](https://brian-genome.shinyapps.io/Lab11-4/)
+
 [@Hopkins2020]
 
 Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].
